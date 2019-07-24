@@ -7,7 +7,7 @@ import {
 const BASE_URL = 'https://search.bossjob.com/api/v1/search/job_filter?';
 
 const createUrl = (query = '', page = null, size = 12) => {
-  let url = `${BASE_URL}size=${size}&query=${query}`;
+  let url = `${BASE_URL}size=${size}&query=${encodeURIComponent(query)}`;
   url += page ? `&page=${page}` : '';
 
   return url;

@@ -1,7 +1,6 @@
 import {
   SET_SEARCH_QUERY,
-  SET_SEARCH_PAGE,
-  FETCHING_JOBS,
+  SET_SEARCH_PAGE
 } from '../constants';
 
 export const setQuery = (query) => ({
