@@ -9,3 +9,7 @@
   min-height: 700px;
 }
 
+.main {
+  position: relative;
+}
+

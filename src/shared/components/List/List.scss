@@ -1,0 +1,23 @@
+ul.List {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0;
+  list-style-type: none;
+
+  > .error {
+    font-size: var(--text_large_size);
+    line-height: var(--text_large_height);
+    color: var(--red);
+    text-align: center;
+  }
+
+  > li {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grey);
+    
+    > h4 {
+      font-size: var(--text_size);
+      line-height: var(--text_height);
+    }
+  }
+}

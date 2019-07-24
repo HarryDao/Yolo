@@ -1,0 +1,83 @@
+li.ListItem {
+  > .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &:first-child {
+      align-items: flex-start;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    > .right {
+      width: 70%;
+      padding-right: 5px;
+
+      &.title {
+        font-size: var(--text_large_size);
+        line-height: var(--text_large_height);
+        font-weight: bold;      
+      }
+
+      &.info {
+        display: flex;
+        flex-wrap: wrap;
+
+        > div {
+          width: 50%;
+          padding: 10px 0;
+          font-size: var(--text_size);
+          line-height: var(--text_height);
+
+          > i {
+            color: var(--blue);
+            margin-right: 10px;
+          }
+        }
+      }
+
+      &.company {
+        display: flex;
+        align-items: center;
+
+        > img {
+          max-height: var(--image_height);
+          margin-right: 10px;
+        }
+
+        > h5 {
+          font-size: var(--text_size);
+          line-height: var(--text_height);
+          font-weight: 600;      
+        }        
+      }
+    }
+
+    > .left {
+      width: 30%;
+
+      &.salary {
+        font-size: var(--text_size);
+        line-height: var(--text_height);
+        text-align: right;
+        font-weight: bold; 
+
+        > img {
+          max-height: var(--char_height);
+        }        
+      }
+
+      &.time {
+        font-size: var(--text_size);
+        line-height: var(--text_height);
+        color: var(--grey);
+        text-align: right;
+        font-weight: bold;      
+      }
+    }
+  }
+}

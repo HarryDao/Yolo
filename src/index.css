@@ -1,3 +1,24 @@
+:root {
+  --blue: #2b7ce9;
+  --grey: #d8d8d8;
+  --white_grey: #f9f9f9;
+  --grey_white: #f3f3f3;
+  --black: #474747;
+  --white: white;
+  --red: red;
+
+  --text_size: 13px;
+  --text_height: 16px;
+
+  --text_large_size: 16px;
+  --text_large_height: 19px;
+
+  --image_height: 40px;
+  --char_height: 10px;
+
+  --transition: 0.1s ease-in-out;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +27,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--black);
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 
 code {

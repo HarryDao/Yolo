@@ -1,0 +1,40 @@
+.Pagination {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 20px auto;
+
+  > button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: var(--text_large_size);
+    line-height: var(--text_large_height);
+    transition: var(--transition);
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      color: var(--blue);
+      
+      &:hover {
+        cursor: default;
+      }
+    }
+
+    &.next {
+      color: var(--blue);
+
+      &.disable {
+        color: var(--grey);
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
+  }
+}
